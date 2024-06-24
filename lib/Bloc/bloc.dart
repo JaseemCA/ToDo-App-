@@ -9,7 +9,7 @@ class TodoBloc extends Bloc<TodoEvent, TodoState> {
     on<FetchTodos>(_mapFetchTodosToState);
     on<AddTodo>(_mapAddTodoToState);
     on<DeleteTodo>(_mapDeleteTodoToState);
-    on<UpdateTodo>(_mapUpdateTodoToState); // This line should be uncommented
+    on<UpdateTodo>(_mapUpdateTodoToState); 
   }
 
   Future<void> _mapFetchTodosToState(FetchTodos event, Emitter<TodoState> emit) async {

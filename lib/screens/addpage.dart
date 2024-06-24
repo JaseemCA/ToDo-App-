@@ -43,7 +43,7 @@ class _AddTodoPageState extends State<AddTodoPage> {
                 final title = titlecontroller.text;
                 final description = descriptioncontroller.text;
                 if (title.isNotEmpty && description.isNotEmpty) {
-                  print('Submitting: $title, $description');
+                  // print('Submitting: $title, $description');
                   context.read<TodoBloc>().add(AddTodo(
                     title: title,
                     description: description,
